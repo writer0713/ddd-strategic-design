@@ -101,13 +101,13 @@ docker compose -p kitchenpos up -d
 | 손님         | Guest            | kitchenPos를 사용하는 고객                             |
 | 사장님       | Owner            | 식당 사장님                                            |
 | 상품         | Product          | KitchenPos 메뉴에 포함되는 식자제                      |
-| 상품 등록    | Create Product   | 해당 상품을 사용하여 메뉴를 등록하기 위해 상품을 등록해야 함 |
+| 상품 등록    | Create Product   | 메뉴를 등록하기 전에 상품을 먼저 등록해야 함 |
 | 상품 가격    | Product Price    | 상품의 가격                                            |
 | 상품 이름    | Product Name     | 상품의 이름                                            |
 | 상품 목록    | Products         | 복수개의 상품                                          |
 | 메뉴 그룹    | MenuGroup        | 비슷한 특성을 가진 여러 메뉴를 포함하는 단위           |
 | 메뉴 그룹 등록 | Create MenuGroup | 메뉴를 등록하기 전에 메뉴 그룹을 먼저 등록해야 함     |
-| 메뉴         | Menu             | kitchenPos를 통해 판매하는 상품                       |
+| 메뉴         | Menu             | kitchenPos를 통해 판매하는 메뉴                       |
 | 주문한 메뉴  | OrderLineItem   | 손님이 주문한 메뉴를 나타냄                           |
 | 등록된 메뉴  | Registered Menu  | 사장님이 kitchenPos에 등록한 메뉴를 나타냄            |
 | 숨겨진 메뉴  | Hidden Menu      | kitchenPos에서 숨겨진 메뉴를 나타냄                   |
@@ -123,11 +123,11 @@ docker compose -p kitchenpos up -d
 | 주문 테이블 이름 | OrderTable Name | 각 주문 테이블은 이름이 필요함                       |
 | 빈테이블     | UnOccupied OrderTable | 손님이 앉지 않은 주문 테이블                        |
 | 빈테이블 해지 | Sit OrderTable   | 손님이 주문 테이블에 앉으면 빈테이블을 해지할 수 있음 |
-| 빈테이블 설정 | Clear OrderTable | 주문이 완료되면 빈테이블로 설정할 수 있음            |
+| 빈테이블 설정 | Clear OrderTable | 손님의 주문이 완료상태가 되면 빈테이블로 설정할 수 있음            |
 | 방문한 손님 수 | Number Of Guests | 주문 테이블을 사용하는 손님 수                       |
-| 방문한 손님 수 변경 | Change Number Of Guests | 방문한 손님 수를 변경함                 |
+| 방문한 손님 수 변경 | Change Number Of Guests | 주문 테이블을 사용하는 손님 수를 변경함                 |
 | 주문 테이블 목록 | OrderTables   | 복수개의 주문 테이블을 포함하는 주문 테이블 목록    |
-| 주문         | Order            | 손님이 kitchenPos를 통해 주문함                       |
+| 주문         | Order            | 손님이 kitchenPos를 통해 주문 가능                       |
 | 주문 유형    | OrderType        | 배달 주문, 포장 주문, 매장 주문 중 하나임             |
 | 배달 주문    | Delivery Order   | 손님이 주문한 음식이 배달 대행업체를 통해 배달됨     |
 | 포장 주문    | TakeOut Order    | 손님이 주문한 음식을 직접 찾아감                     |
