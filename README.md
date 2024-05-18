@@ -168,7 +168,7 @@ docker compose -p kitchenpos up -d
 | 배달 완료     | Complete Delivery | 손님에게 정상적으로 음식을 배달 완료한 상태                                                                      |
 | 완료        | Complete          | 손님에게 음식 제공이 끝나서 주문이 완료된 상태                                                                    |
 | 배달 대행사    | DeliveryAgency    | 배달을 전문으로 하는 외부 대행사. 호출을 받으면 배달 대행사에서 배달을 대행해준다.                                               |
-| 배달 대행사 호출 | Call Delivery     | 손님에게 배달을 하기 외부 배달 대행사에게 요청하는 행위                                                               |
+| 배달 대행사 호출 | Call Delivery     | 손님에게 배달을 하기 위해 외부 배달 대행사에게 요청하는 행위                                                            |
 | 손님        | Customer          | 음식점에 음식을 주문하는 고객                                                                              |
 
 ## 모델링
