@@ -122,7 +122,7 @@ docker compose -p kitchenpos up -d
 | 주문한 메뉴   | Ordered Menu      | 손님이 주문한 메뉴를 뜻한다.                             |
 | 등록된 메뉴   | Registered Menu   | 점장이 키친포스에 등록한 메뉴를 뜻한다.                       |
 | 숨겨진 메뉴   | Hidden Menu       | 키친포스에서 숨겨진 메뉴를 뜻한다.                          |
-| 메뉴 등록    | Register Menu     | 한 개 이상의 등록된 상품으로 메뉴를 등록할 수 있습니다.             |
+| 메뉴 등록    | Register Menu     | 한 개 이상의 등록된 상품으로 구성된 메뉴를 등록할 수 있다.             |
 | 메뉴 노출    | Display Menu      | 메뉴를 노출할 수 있다. 손님은 노출된 메뉴를 주문할 수 있다.          |
 | 메뉴 숨김    | Hide Menu         | 점장은 메뉴를 숨길수 있다. 메뉴를 숨기면 손님은 해당 메뉴를 주문할 수 없다. |
 | 메뉴 가격    | Menu Price        | 메뉴의 가격을 나타낸다.                                |
