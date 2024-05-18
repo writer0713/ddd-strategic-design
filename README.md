@@ -106,6 +106,7 @@ docker compose -p kitchenpos up -d
 | 상품 가격 | Product Price    | 상품의 가격을 의미한다.                            |
 | 상품 이름 | Product Name     | 상품의 이름을 의미한다.                            |
 | 상품 목록 | Products         | 복수개의 상품을 의미한다.                           |
+| 비속어   | Profanity        | 욕설 또는 비속어를 말한다.                          |
 
 ### 메뉴 그룹
 
@@ -129,6 +130,9 @@ docker compose -p kitchenpos up -d
 | 메뉴 가격 변경 | Change Menu Price | 점장은 메뉴 가격을 변경할 수 있다.                         |
 | 메뉴 이름    | Menu Name         | 메뉴의 이름을 나타낸다.                                |
 | 메뉴 목록    | Menus             | 복수개의 메뉴를 의미한다.                               |
+| 손님       | Customer          | 음식점에 음식을 주문하는 고객                             |
+| 점장       | Owner             | 식당 사장님                                       |
+| 비속어      | Profanity         | 욕설 또는 비속어를 말한다.                              |
 
 ### 주문 테이블
 
@@ -143,6 +147,7 @@ docker compose -p kitchenpos up -d
 | 방문한 손님 수    | Number Of Guests        | 주문 테이블을 사용하는 손님 수         |
 | 방문한 손님 수 변경 | Change Number Of Guests | 주문 테이블을 사용하는 손님의 수를 변경한다. |
 | 주문 테이블 목록   | Tables                  | 복수개의 주문 테이블               |
+| 손님          | Customer                | 음식점에 음식을 주문하는 고객          |
 
 ### 주문
 
@@ -164,13 +169,6 @@ docker compose -p kitchenpos up -d
 | 완료        | Complete          | 손님에게 음식 제공이 끝나서 주문이 완료된 상태                                                                    |
 | 배달 대행사    | DeliveryAgency    | 배달을 전문으로 하는 외부 대행사. 호출을 받으면 배달 대행사에서 배달을 대행해준다.                                               |
 | 배달 대행사 호출 | Call Delivery     | 손님에게 배달을 하기 외부 배달 대행사에게 요청하는 행위                                                               |
-
-### 기타
-
-| 한글명 | 영문명       | 설명               |
-|-----|-----------|------------------|
-| 손님  | Customer  | 음식점에 음식을 주문하는 고객 |
-| 점주  | Owner     | 식당 사장님           |
-| 비속어 | Profanity | 욕설 또는 비속어를 말한다.  |
+| 손님        | Customer          | 음식점에 음식을 주문하는 고객                                                                              |
 
 ## 모델링
