@@ -102,9 +102,9 @@ docker compose -p kitchenpos up -d
 |-------|------------------|-------------------------------------------|
 | 상품    | Product          | 키친포스에 판매되고 있거나 판매될 음식과 관련된 여러가지 정보를 의미한다. |
 | 상품 등록 | Register Product | 상품을 키친포스에 등록하여 해당 상품을 메뉴에 추가할 수 있다.       |
-| 상품 수량 | Product Quantity | 상품의 수량을 의미한다.                             |
-| 상품 가격 | Product Price    | 상품의 가격을 의미한다.                             |
-| 상품 이름 | Product Name     | 상품의 이름을 의미한다.                             |
+| 수량    | Quantity         | 상품의 수량을 의미한다.                             |
+| 가격    | Price            | 상품의 가격을 의미한다.                             |
+| 이름    | Name             | 상품의 이름을 의미한다.                             |
 | 상품 목록 | Products         | 복수개의 상품을 의미한다.                            |
 | 비속어   | Profanity        | 욕설 또는 비속어를 의미한다.                          |
 
@@ -117,22 +117,23 @@ docker compose -p kitchenpos up -d
 
 ### 메뉴
 
-| 한글명      | 영문명               | 설명                                        |
-|----------|-------------------|-------------------------------------------|
-| 메뉴       | Menu              | 한 개 이상의 상품으로 이루어진 상품의 집합을 의미한다.           |
-| 주문한 메뉴   | Ordered Menu      | 손님이 주문한 메뉴를 의미한다.                         |
-| 등록된 메뉴   | Registered Menu   | 점장이 키친포스에 등록한 메뉴를 의미한다.                   |
-| 숨겨진 메뉴   | Hidden Menu       | 키친포스에서 숨겨진 메뉴를 의미한다.                      |
-| 메뉴 등록    | Register Menu     | 한 개 이상의 등록된 상품으로 구성된 메뉴를 등록할 수 있다.        |
-| 메뉴 노출    | Display Menu      | 메뉴를 손님에게 노출할 수 있으며, 손님은 노출된 메뉴만 주문할 수 있다. |
-| 메뉴 숨김    | Hide Menu         | 점장은 메뉴를 숨길 수 있으며, 숨겨진 메뉴는 고객이 주문할 수 없다.   |
-| 메뉴 가격    | Menu Price        | 메뉴의 가격을 의미한다.                             |
-| 메뉴 가격 변경 | Change Menu Price | 점장은 메뉴 가격을 변경할 수 있다.                      |
-| 메뉴 이름    | Menu Name         | 메뉴의 이름을 의미한다.                             |
-| 메뉴 목록    | Menus             | 복수개의 메뉴를 의미한다.                            |
-| 손님       | Customer          | 음식점에 음식을 주문하는 고객                          |
-| 점장       | Owner             | 식당 사장님                                    |
-| 비속어      | Profanity         | 욕설 또는 비속어를 의미한다.                          |
+| 한글명    | 영문명               | 설명                                        |
+|--------|-------------------|-------------------------------------------|
+| 메뉴     | Menu              | 한 개 이상의 상품으로 이루어진 상품의 집합을 의미한다.           |
+| 주문한 메뉴 | Ordered Menu      | 손님이 주문한 메뉴를 의미한다.                         |
+| 등록된 메뉴 | Registered Menu   | 점장이 키친포스에 등록한 메뉴를 의미한다.                   |
+| 숨겨진 메뉴 | Hidden Menu       | 키친포스에서 숨겨진 메뉴를 의미한다.                      |
+| 등록     | Register Menu     | 한 개 이상의 등록된 상품으로 구성된 메뉴를 등록할 수 있다.        |
+| 노출     | Display Menu      | 메뉴를 손님에게 노출할 수 있으며, 손님은 노출된 메뉴만 주문할 수 있다. |
+| 숨김     | Hide Menu         | 점장은 메뉴를 숨길 수 있으며, 숨겨진 메뉴는 고객이 주문할 수 없다.   |
+| 가격     | Menu Price        | 메뉴의 가격을 의미한다.                             |
+| 가격 변경  | Change Menu Price | 점장은 메뉴 가격을 변경할 수 있다.                      |
+| 이름     | Name              | 메뉴의 이름을 의미한다.                             |
+| 구성상품   | Menu Products     | 메뉴를 구성하는 상품들을 의미한다.                       |
+| 메뉴 목록  | Menus             | 복수개의 메뉴를 의미한다.                            |
+| 손님     | Customer          | 음식점에 음식을 주문하는 고객                          |
+| 점장     | Owner             | 식당 사장님                                    |
+| 비속어    | Profanity         | 욕설 또는 비속어를 의미한다.                          |
 
 ### 주문 테이블
 
@@ -146,6 +147,7 @@ docker compose -p kitchenpos up -d
 | 빈테이블        | Empty Table             | 손님이 앉지 않은 빈 테이블          |
 | 테이블 착석      | Sit Table               | 손님이 주문 테이블에 앉은 상태        |
 | 테이블 정리      | Clear Table             | 주문이 완료된 손님의 테이블을 정리한다.   |
+| 착석 상태       | Occupied                | 테이블에 손님이 착석했는지 유무        |
 | 착석한 손님 수    | Number Of Guests        | 주문 테이블에 착석한 손님 수         |
 | 착석한 손님 수 변경 | Change Number Of Guests | 주문 테이블에 착석한 손님의 수를 변경한다. |
 
@@ -173,3 +175,136 @@ docker compose -p kitchenpos up -d
 | 배달 대행사 호출 | Call Delivery     | 손님에게 배달을 하기 위해 외부 배달 대행사에게 요청하는 행위                                                            |
 
 ## 모델링
+
+## 상품
+
+### 속성
+
+- 상품 (`Product`) 은 식별자, 수량, 가격, 이름을 가진다.
+
+### 행위
+
+- 상품 (`Product`) 을 등록한다.
+    - 이름에 비속어가 포함되어 있으면 등록할 수 없다.
+        - 비속어 포함여부는 외부서비스 (Purgomalum) 을 사용한다.
+    - 가격은 0원 이상이어야 등록 가능하다.
+- 상품 (`Product`) 의 가격을 변경한다.
+    - 가격은 0원 이상이어야 변경 가능하다.
+    - 상품의 가격이 변경될 때 메뉴의 가격이 메뉴 구성상품(`Menu Products`)의 금액의 합보다 크면 메뉴가 숨겨진다 (**Hide**).
+- 상품 (`Product`) 목록을 조회한다.
+
+## 메뉴 그룹
+
+### 속성
+
+- 메뉴그룹 (`MenuGroup`) 은 식별자, 이름을 가진다.
+
+### 행위
+
+- 메뉴그룹 (`MenuGroup`) 을 등록할 수 있다.
+    - 이름은 비워 둘 수 없다.
+- 메뉴그룹 (`MenuGroup`) 목록을 조회할 수 있다.
+
+## 메뉴
+
+### 속성
+
+- 메뉴(Menu) 는 식별자, 이름, 가격, 메뉴그룹, 노출여부, 구성상품을 가진다.
+
+### 행위
+- 메뉴(`Menu`) 를 등록할 수 있다.
+  - 메뉴(`Menu`) 는 특정 메뉴 그룹(`Menu Group`) 에 속해야 한다.
+  - 1개 이상의 이미 등록된 상품(`Registered Product`) 으로 메뉴를 등록할 수 있다.
+  - 구성상품 (`Menu Products`) 의 수량은 0 이상이어야 한다. 
+  - 메뉴의 가격(`Price`) 은 0원 이상이어야 한다.
+  - 구성상품 (`Menu Products`) 금액의 합은 메뉴의 가격보다 크거나 같아야 한다.
+  - 메뉴(`Menu`)의 이름에는 비속어(`Profanity`)가 포함될 수 없다.
+    - 비속어(`Profanity`) 포함여부는 외부서비스 (Purgomalum) 을 사용한다.
+- 메뉴(`Menu`) 의 가격(`Price`)을 변경할 수 있다.
+  - 메뉴(`Menu`)의 가격(`Price`) 는 0원 이상이어야 한다.
+- 메뉴(`Menu`) 를 노출(`Display`)할 수 있다.
+- 메뉴(`Menu`) 를 숨길(`Hide`) 수 있다.
+- 메뉴목록(`Menus`) 을 조회 할 수 있다.
+
+## 주문 테이블
+
+### 속성
+
+- 주문 테이블(`Table`) 은 식별자, 이름, 착석상태, 착석한 손님 수를 가진다.
+
+### 행위
+
+- 점장(`Owner`)은 주문 테이블(`Table`) 을 등록할 수 있다.
+    - 주문 테이블(`Table`) 이름(`Name`) 은 비워 둘 수 없다.
+- 점장(`Owner`)은 주문 테이블(`Table`) 의 상태(`Occupied`)를 변경할 수 있다.
+    - 손님(`Customer`) 이 테이블에 착석하면 착석상태(`Occupied`) 는 `true` 가 된다.
+    - 테이블을 정리하면 착석상태(`Occupied`)는 `false` 가 된다. (= `Empty Table`)
+        - 완료되지 않은 주문이 있는 주문 테이블(`Table`) 은 착석상태(`Occupied`) 를 `false` 로 변경할 수 없다.
+- 착석한 손님 수(`Number Of Guests`) 를 변경할 수 있다.
+    - 착석한 손님 수(`Number Of Guests`) 는 0 이상이어야 한다.
+    - 빈 테이블(`Empty Table`) 은 방문한 손님 수 (`Number Of Guests`) 를 변경할 수 없다.
+- 주문 테이블(`Table`) 의 목록을 조회할 수 있다.
+
+## 배달주문
+
+### 속성
+- 배달주문(`Delivery Order`) 은 식별자, 주문유형, 주문상태, 주문시각, 주문상품, 배달주소를 갖는다.
+
+### 행위
+- 1개 이상의 등록된 메뉴(`Registered Menu`) 로 배달주문(`Delivery Order`) 을 등록할 수 있다.
+  - 메뉴(`Menu`) 가 없으면 주문 (`Order`) 을 등록할 수 없다.
+  - 주문항목 수량(`Quantity`) 이 0 이상이어야 한다.
+  - 올바른 배달주소 (`Delivery Address`) 가 필요하다. 
+  - 숨겨진 메뉴(`Hidden Menu`) 는 주문할 수 없다.
+- 배달주문(`Delivery Order`) 을 접수한다.
+  - 접수 대기 중인 주문 (`Waiting Order`)만 접수 (`Accept`)할 수 있다.
+  - 배달주문(`Delivery Order`) 을 접수하면 배달 대행사를 호출(`Call Delivery`) 한다.
+- 배달주문(`Delivery Order`) 을 서빙(`Serve`) 한다.
+  - 접수된 주문 (`Accepted Order`) 만 서빙(`Serve`)할 수 있다.
+- 배달주문(`Delivery Order`) 을 배달 시작(`Start Delivery`)한다.
+  - 서빙된 주문(`Served Order`)만 배달 시작(`Start Delivery`)할 수 있다.
+- 배달주문(`Delivery Order`) 을 배달 완료(`Complete Delivery`)할 수 있다.
+  - 배달 시작(`Start Delivery`) 상태의 주문(`Order`) 만 배달 완료(`Complete Delivery`) 할 수 있다.
+- 배달주문(`Delivery Order`) 을 완료(`Complete Order`)한다.
+  - 배달 완료(`Complete Delivery`) 상태의 배달주문(`Delivery Order`) 만 완료(`Complete`) 할 수 있다.
+- 주문 목록 (`Orders`) 를 조회할 수 있다.
+
+## 포장주문
+
+### 속성
+- 포장주문(`Takeout Order`) 은 식별자, 주문유형, 주문상태, 주문시각, 주문상품을 갖는다.
+
+### 행위
+- 1개 이상의 등록된 메뉴(`Registered Menu`) 로 포장주문(`Takeout Order`) 을 등록할 수 있다.
+  - 메뉴(`Menu`) 가 없으면 포장주문(`Takeout Order`) 을 등록할 수 없다.
+  - 주문항목 수량(`Quantity`) 이 0 이상이어야 한다.
+  - 숨겨진 메뉴(`Hidden Menu`) 는 주문할 수 없다.
+  - 주문한 메뉴의 가격은 실제 메뉴 가격과 일치해야 한다.
+- 포장주문(`Takeout Order`) 을 접수한다.
+  - 접수 대기 중인 주문 (`Waiting Order`)만 접수 (`Accept`)할 수 있다.
+- 포장주문(`Takeout Order`) 을 서빙(`Serve`) 한다.
+  - 접수된 주문 (`Accepted Order`) 만 서빙(`Serve`)할 수 있다.
+- 포장주문(`Takeout Order`) 을 완료(`Complete Order`)한다.
+  - 서빙된(`Served`) 상태의 포장주문(`Takeout Order`) 만 완료(`Complete`) 할 수 있다.
+- 주문 목록 (`Orders`) 를 조회할 수 있다.
+
+## 매장주문
+
+### 속성
+- 매장주문(`EatInOrder`) 은 식별자, 주문유형, 주문상태, 주문시각, 주문상품, 배달주소, 주문 테이블을 갖는다.
+
+### 행위
+- 1개 이상의 등록된 메뉴(`Registered Menu`) 로 매장주문(`EatInOrder`) 을 등록할 수 있다.
+  - 메뉴(`Menu`) 가 없으면 주문 (`Order`) 을 등록할 수 없다.
+  - 주문항목 수량(`Quantity`) 이 0 미만일 수 있다.
+  - 주문을 등록하기 위해서는 테이블에 착석(`Sit Table`) 해야 한다.
+  - 숨겨진 메뉴(`Hidden Menu`) 는 주문할 수 없다.
+  - 주문한 메뉴의 가격은 실제 메뉴 가격과 일치해야 한다.
+- 매장주문(`EatInOrder`) 을 접수한다.
+  - 접수 대기 중인 주문 (`Waiting Order`)만 접수 (`Accept`)할 수 있다.
+- 매장주문(`EatInOrder`) 을 서빙(`Serve`) 한다.
+  - 접수된 주문 (`Accepted Order`) 만 서빙(`Serve`)할 수 있다.
+- 매장주문(`EatInOrder`) 을 완료(`Complete Order`)한다.
+  - 서빙된(`Served`) 상태의 매장주문(`EatInOrder`) 만 완료(`Complete`) 할 수 있다.
+  - 매장주문(`EatInOrder`) 이 완료(`Complete`) 된 주문 테이블(`Table`) 은 빈테이블(`Empty Table`) 로 설정한다.
+- 주문 목록 (`Orders`) 를 조회할 수 있다.
