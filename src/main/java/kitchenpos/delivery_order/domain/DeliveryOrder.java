@@ -2,7 +2,6 @@ package kitchenpos.delivery_order.domain;
 
 import jakarta.persistence.*;
 import kitchenpos.order.domain.OrderLineItem;
-import kitchenpos.order.domain.OrderStatus;
 import kitchenpos.order.domain.OrderType;
 
 import java.time.LocalDateTime;
