@@ -1,5 +1,6 @@
 package kitchenpos;
 
+import kitchenpos.delivery_order.domain.DeliveryOrder;
 import kitchenpos.menu.domain.Menu;
 import kitchenpos.menu_group.domain.MenuGroup;
 import kitchenpos.menu.domain.MenuProduct;
@@ -65,8 +66,8 @@ public class Fixtures {
         return menuProduct;
     }
 
-    public static Order order(final OrderStatus status, final String deliveryAddress) {
-        final Order order = new Order();
+    public static DeliveryOrder order(final kitchenpos.delivery_order.domain.OrderStatus status, final String deliveryAddress) {
+        final DeliveryOrder order = new DeliveryOrder();
         order.setId(UUID.randomUUID());
         order.setType(OrderType.DELIVERY);
         order.setStatus(status);
