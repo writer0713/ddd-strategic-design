@@ -90,7 +90,7 @@ class DeliveryOrderServiceTest {
     void createWithoutEatInOrder(final long quantity) {
         final UUID menuId = menuRepository.save(menu(19_000L, true, menuProduct())).getId();
         final DeliveryOrder expected = createOrderRequest(
-                OrderType.TAKEOUT, createOrderLineItemRequest(menuId, 19_000L, quantity)
+                OrderType.DELIVERY, createOrderLineItemRequest(menuId, 19_000L, quantity)
         );
         assertThatThrownBy(() -> deliveryOrderService.create(expected))
                 .isInstanceOf(IllegalArgumentException.class);
