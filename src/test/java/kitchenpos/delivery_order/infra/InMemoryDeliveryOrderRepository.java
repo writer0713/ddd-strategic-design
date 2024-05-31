@@ -2,12 +2,7 @@ package kitchenpos.delivery_order.infra;
 
 import kitchenpos.delivery_order.domain.DeliveryOrder;
 import kitchenpos.delivery_order.domain.DeliveryOrderRepository;
-import kitchenpos.order.domain.Order;
-import kitchenpos.order.domain.OrderRepository;
-import kitchenpos.order.domain.OrderStatus;
-import kitchenpos.order_table.domain.OrderTable;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

@@ -10,6 +10,7 @@ import kitchenpos.order.domain.OrderStatus;
 import kitchenpos.order_table.domain.OrderTable;
 import kitchenpos.order.domain.OrderType;
 import kitchenpos.product.domain.Product;
+import kitchenpos.take_out_order.domain.TakeOutOrder;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -77,8 +78,8 @@ public class Fixtures {
         return order;
     }
 
-    public static Order order(final OrderStatus status) {
-        final Order order = new Order();
+    public static TakeOutOrder order(final kitchenpos.take_out_order.domain.OrderStatus status) {
+        final TakeOutOrder order = new TakeOutOrder();
         order.setId(UUID.randomUUID());
         order.setType(OrderType.TAKEOUT);
         order.setStatus(status);
