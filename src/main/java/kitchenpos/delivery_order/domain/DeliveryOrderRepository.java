@@ -1,8 +1,5 @@
 package kitchenpos.delivery_order.domain;
 
-import kitchenpos.order.domain.OrderStatus;
-import kitchenpos.order_table.domain.OrderTable;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
