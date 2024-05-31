@@ -1,14 +1,14 @@
 package kitchenpos;
 
 import kitchenpos.delivery_order.domain.DeliveryOrder;
+import kitchenpos.eat_in_order.domain.EatInOrder;
+import kitchenpos.eat_in_order.domain.OrderStatus;
 import kitchenpos.menu.domain.Menu;
-import kitchenpos.menu_group.domain.MenuGroup;
 import kitchenpos.menu.domain.MenuProduct;
-import kitchenpos.order.domain.Order;
+import kitchenpos.menu_group.domain.MenuGroup;
 import kitchenpos.order.domain.OrderLineItem;
-import kitchenpos.order.domain.OrderStatus;
-import kitchenpos.order_table.domain.OrderTable;
 import kitchenpos.order.domain.OrderType;
+import kitchenpos.order_table.domain.OrderTable;
 import kitchenpos.product.domain.Product;
 import kitchenpos.take_out_order.domain.TakeOutOrder;
 
@@ -88,8 +88,18 @@ public class Fixtures {
         return order;
     }
 
-    public static Order order(final OrderStatus status, final OrderTable orderTable) {
-        final Order order = new Order();
+    public static EatInOrder order(final kitchenpos.eat_in_order.domain.OrderStatus status) {
+        final EatInOrder order = new EatInOrder();
+        order.setId(UUID.randomUUID());
+        order.setType(OrderType.EAT_IN);
+        order.setStatus(status);
+        order.setOrderDateTime(LocalDateTime.of(2020, 1, 1, 12, 0));
+        order.setOrderLineItems(Arrays.asList(orderLineItem()));
+        return order;
+    }
+
+    public static EatInOrder order(final OrderStatus status, final OrderTable orderTable) {
+        final EatInOrder order = new EatInOrder();
         order.setId(UUID.randomUUID());
         order.setType(OrderType.EAT_IN);
         order.setStatus(status);

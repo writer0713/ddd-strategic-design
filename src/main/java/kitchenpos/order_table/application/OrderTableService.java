@@ -1,7 +1,7 @@
 package kitchenpos.order_table.application;
 
-import kitchenpos.order.domain.OrderRepository;
-import kitchenpos.order.domain.OrderStatus;
+import kitchenpos.eat_in_order.domain.EatInOrderRepository;
+import kitchenpos.eat_in_order.domain.OrderStatus;
 import kitchenpos.order_table.domain.OrderTable;
 import kitchenpos.order_table.domain.OrderTableRepository;
 import org.springframework.stereotype.Service;
@@ -15,9 +15,9 @@ import java.util.UUID;
 @Service
 public class OrderTableService {
     private final OrderTableRepository orderTableRepository;
-    private final OrderRepository orderRepository;
+    private final EatInOrderRepository orderRepository;
 
-    public OrderTableService(final OrderTableRepository orderTableRepository, final OrderRepository orderRepository) {
+    public OrderTableService(final OrderTableRepository orderTableRepository, final EatInOrderRepository orderRepository) {
         this.orderTableRepository = orderTableRepository;
         this.orderRepository = orderRepository;
     }

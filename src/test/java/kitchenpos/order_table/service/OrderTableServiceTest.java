@@ -1,13 +1,12 @@
 package kitchenpos.order_table.service;
 
-import kitchenpos.take_out_order.infra.InMemoryOrderRepository;
-import kitchenpos.order_table.infra.InMemoryOrderTableRepository;
-import kitchenpos.order.domain.OrderRepository;
-import kitchenpos.order.domain.OrderStatus;
+import kitchenpos.eat_in_order.domain.EatInOrderRepository;
+import kitchenpos.eat_in_order.domain.OrderStatus;
+import kitchenpos.eat_in_order.infra.InMemoryEatInOrderRepository;
+import kitchenpos.order_table.application.OrderTableService;
 import kitchenpos.order_table.domain.OrderTable;
 import kitchenpos.order_table.domain.OrderTableRepository;
-import kitchenpos.order_table.application.OrderTableService;
-
+import kitchenpos.order_table.infra.InMemoryOrderTableRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -26,13 +25,13 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 
 class OrderTableServiceTest {
     private OrderTableRepository orderTableRepository;
-    private OrderRepository orderRepository;
+    private EatInOrderRepository orderRepository;
     private OrderTableService orderTableService;
 
     @BeforeEach
     void setUp() {
         orderTableRepository = new InMemoryOrderTableRepository();
-        orderRepository = new InMemoryOrderRepository();
+        orderRepository = new InMemoryEatInOrderRepository();
         orderTableService = new OrderTableService(orderTableRepository, orderRepository);
     }
 
