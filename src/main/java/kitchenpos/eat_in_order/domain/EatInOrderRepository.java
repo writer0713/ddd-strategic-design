@@ -1,6 +1,5 @@
 package kitchenpos.eat_in_order.domain;
 
-import kitchenpos.order.domain.OrderStatus;
 import kitchenpos.order_table.domain.OrderTable;
 
 import java.util.List;
