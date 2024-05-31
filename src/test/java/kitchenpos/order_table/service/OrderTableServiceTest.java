@@ -1,8 +1,8 @@
 package kitchenpos.order_table.service;
 
-import kitchenpos.eat_in_order.domain.EatInOrderRepository;
-import kitchenpos.eat_in_order.domain.OrderStatus;
-import kitchenpos.eat_in_order.infra.InMemoryEatInOrderRepository;
+import kitchenpos.order.eat_in_order.domain.EatInOrderRepository;
+import kitchenpos.order.eat_in_order.domain.OrderStatus;
+import kitchenpos.order.eat_in_order.infra.InMemoryEatInOrderRepository;
 import kitchenpos.order_table.application.OrderTableService;
 import kitchenpos.order_table.domain.OrderTable;
 import kitchenpos.order_table.domain.OrderTableRepository;

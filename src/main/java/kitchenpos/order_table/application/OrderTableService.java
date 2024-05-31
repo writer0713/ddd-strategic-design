@@ -1,7 +1,7 @@
 package kitchenpos.order_table.application;
 
-import kitchenpos.eat_in_order.domain.EatInOrderRepository;
-import kitchenpos.eat_in_order.domain.OrderStatus;
+import kitchenpos.order.eat_in_order.domain.EatInOrderRepository;
+import kitchenpos.order.eat_in_order.domain.OrderStatus;
 import kitchenpos.order_table.domain.OrderTable;
 import kitchenpos.order_table.domain.OrderTableRepository;
 import org.springframework.stereotype.Service;

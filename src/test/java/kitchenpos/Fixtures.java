@@ -1,8 +1,8 @@
 package kitchenpos;
 
-import kitchenpos.delivery_order.domain.DeliveryOrder;
-import kitchenpos.eat_in_order.domain.EatInOrder;
-import kitchenpos.eat_in_order.domain.OrderStatus;
+import kitchenpos.order.delivery_order.domain.OrderStatus;
+import kitchenpos.order.delivery_order.domain.DeliveryOrder;
+import kitchenpos.order.eat_in_order.domain.EatInOrder;
 import kitchenpos.menu.domain.Menu;
 import kitchenpos.menu.domain.MenuProduct;
 import kitchenpos.menu_group.domain.MenuGroup;
@@ -10,7 +10,7 @@ import kitchenpos.order.domain.OrderLineItem;
 import kitchenpos.order.domain.OrderType;
 import kitchenpos.order_table.domain.OrderTable;
 import kitchenpos.product.domain.Product;
-import kitchenpos.take_out_order.domain.TakeOutOrder;
+import kitchenpos.order.take_out_order.domain.TakeOutOrder;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -67,7 +67,7 @@ public class Fixtures {
         return menuProduct;
     }
 
-    public static DeliveryOrder order(final kitchenpos.delivery_order.domain.OrderStatus status, final String deliveryAddress) {
+    public static DeliveryOrder order(final OrderStatus status, final String deliveryAddress) {
         final DeliveryOrder order = new DeliveryOrder();
         order.setId(UUID.randomUUID());
         order.setType(OrderType.DELIVERY);
@@ -78,7 +78,7 @@ public class Fixtures {
         return order;
     }
 
-    public static TakeOutOrder order(final kitchenpos.take_out_order.domain.OrderStatus status) {
+    public static TakeOutOrder order(final kitchenpos.order.take_out_order.domain.OrderStatus status) {
         final TakeOutOrder order = new TakeOutOrder();
         order.setId(UUID.randomUUID());
         order.setType(OrderType.TAKEOUT);
@@ -88,7 +88,7 @@ public class Fixtures {
         return order;
     }
 
-    public static EatInOrder order(final kitchenpos.eat_in_order.domain.OrderStatus status) {
+    public static EatInOrder order(final kitchenpos.order.eat_in_order.domain.OrderStatus status) {
         final EatInOrder order = new EatInOrder();
         order.setId(UUID.randomUUID());
         order.setType(OrderType.EAT_IN);
@@ -98,7 +98,7 @@ public class Fixtures {
         return order;
     }
 
-    public static EatInOrder order(final OrderStatus status, final OrderTable orderTable) {
+    public static EatInOrder order(final kitchenpos.order.eat_in_order.domain.OrderStatus status, final OrderTable orderTable) {
         final EatInOrder order = new EatInOrder();
         order.setId(UUID.randomUUID());
         order.setType(OrderType.EAT_IN);
