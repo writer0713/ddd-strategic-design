@@ -28,10 +28,10 @@ public class DeliveryOrder {
 
     @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinColumn(
-            name = "order_id",
+            name = "delivery_order_id",
             nullable = false,
             columnDefinition = "binary(16)",
-            foreignKey = @ForeignKey(name = "fk_order_line_item_to_orders")
+            foreignKey = @ForeignKey(name = "fk_order_line_item_to_delivery_orders")
     )
     private List<OrderLineItem> orderLineItems;
 

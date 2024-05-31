@@ -13,7 +13,5 @@ public interface DeliveryOrderRepository {
     Optional<DeliveryOrder> findById(UUID id);
 
     List<DeliveryOrder> findAll();
-
-    boolean existsByOrderTableAndStatusNot(OrderTable orderTable, OrderStatus status);
 }
 
