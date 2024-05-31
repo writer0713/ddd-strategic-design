@@ -1,6 +1,7 @@
-package kitchenpos.application;
+package kitchenpos.take_out_order.service;
 
 import kitchenpos.menu.domain.MenuRepository;
+import kitchenpos.menu.infra.InMemoryMenuRepository;
 import kitchenpos.order.domain.Order;
 import kitchenpos.order.domain.OrderLineItem;
 import kitchenpos.order.domain.OrderRepository;
@@ -9,6 +10,9 @@ import kitchenpos.order.application.OrderService;
 import kitchenpos.order_table.domain.OrderTable;
 import kitchenpos.order_table.domain.OrderTableRepository;
 import kitchenpos.order.domain.OrderType;
+import kitchenpos.order_table.infra.InMemoryOrderTableRepository;
+import kitchenpos.take_out_order.infra.FakeKitchenridersClient;
+import kitchenpos.take_out_order.infra.InMemoryOrderRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

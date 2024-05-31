@@ -1,4 +1,4 @@
-package kitchenpos.application;
+package kitchenpos.take_out_order.infra;
 
 import kitchenpos.order.domain.Order;
 import kitchenpos.order.domain.OrderRepository;
