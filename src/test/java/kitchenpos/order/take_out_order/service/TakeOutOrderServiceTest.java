@@ -1,6 +1,6 @@
 package kitchenpos.order.take_out_order.service;
 
-import kitchenpos.menu.domain.MenuRepository;
+import kitchenpos.menu.domain.menu.MenuRepository;
 import kitchenpos.menu.infra.InMemoryMenuRepository;
 import kitchenpos.order.domain.OrderLineItem;
 import kitchenpos.order.domain.OrderType;

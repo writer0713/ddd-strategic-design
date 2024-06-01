@@ -5,7 +5,7 @@ import kitchenpos.order.delivery_order.domain.DeliveryOrder;
 import kitchenpos.order.delivery_order.domain.OrderStatus;
 import kitchenpos.order.delivery_order.infra.FakeKitchenridersClient;
 import kitchenpos.order.delivery_order.infra.InMemoryDeliveryOrderRepository;
-import kitchenpos.menu.domain.MenuRepository;
+import kitchenpos.menu.domain.menu.MenuRepository;
 import kitchenpos.menu.infra.InMemoryMenuRepository;
 import kitchenpos.order.domain.OrderLineItem;
 import kitchenpos.order.domain.OrderType;

@@ -4,7 +4,7 @@ import kitchenpos.order.eat_in_order.application.EatInOrderService;
 import kitchenpos.order.eat_in_order.domain.EatInOrder;
 import kitchenpos.order.eat_in_order.domain.OrderStatus;
 import kitchenpos.order.eat_in_order.infra.InMemoryEatInOrderRepository;
-import kitchenpos.menu.domain.MenuRepository;
+import kitchenpos.menu.domain.menu.MenuRepository;
 import kitchenpos.menu.infra.InMemoryMenuRepository;
 import kitchenpos.order.domain.OrderLineItem;
 import kitchenpos.order.domain.OrderType;
