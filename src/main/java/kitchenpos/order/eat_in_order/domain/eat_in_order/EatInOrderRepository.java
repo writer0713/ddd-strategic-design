@@ -1,6 +1,6 @@
-package kitchenpos.order.eat_in_order.domain;
+package kitchenpos.order.eat_in_order.domain.eat_in_order;
 
-import kitchenpos.order_table.domain.OrderTable;
+import kitchenpos.order.eat_in_order.domain.order_table.OrderTable;
 
 import java.util.List;
 import java.util.Optional;

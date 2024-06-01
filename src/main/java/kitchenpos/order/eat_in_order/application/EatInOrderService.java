@@ -4,11 +4,11 @@ import kitchenpos.menu.domain.menu.Menu;
 import kitchenpos.menu.domain.menu.MenuRepository;
 import kitchenpos.order.domain.OrderLineItem;
 import kitchenpos.order.domain.OrderType;
-import kitchenpos.order.eat_in_order.domain.EatInOrder;
-import kitchenpos.order.eat_in_order.domain.EatInOrderRepository;
-import kitchenpos.order.eat_in_order.domain.OrderStatus;
-import kitchenpos.order_table.domain.OrderTable;
-import kitchenpos.order_table.domain.OrderTableRepository;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.EatInOrder;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.EatInOrderRepository;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.OrderStatus;
+import kitchenpos.order.eat_in_order.domain.order_table.OrderTable;
+import kitchenpos.order.eat_in_order.domain.order_table.OrderTableRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

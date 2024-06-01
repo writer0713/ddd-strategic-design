@@ -1,7 +1,7 @@
 package kitchenpos.order.eat_in_order.ui;
 
 import kitchenpos.order.eat_in_order.application.EatInOrderService;
-import kitchenpos.order.eat_in_order.domain.EatInOrder;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.EatInOrder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,9 +1,9 @@
-package kitchenpos.order.eat_in_order.domain;
+package kitchenpos.order.eat_in_order.domain.eat_in_order;
 
 import jakarta.persistence.*;
 import kitchenpos.order.domain.OrderType;
 import kitchenpos.order.domain.OrderLineItem;
-import kitchenpos.order_table.domain.OrderTable;
+import kitchenpos.order.eat_in_order.domain.order_table.OrderTable;
 
 import java.time.LocalDateTime;
 import java.util.List;

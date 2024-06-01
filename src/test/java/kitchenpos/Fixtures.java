@@ -2,13 +2,13 @@ package kitchenpos;
 
 import kitchenpos.order.delivery_order.domain.OrderStatus;
 import kitchenpos.order.delivery_order.domain.DeliveryOrder;
-import kitchenpos.order.eat_in_order.domain.EatInOrder;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.EatInOrder;
 import kitchenpos.menu.domain.menu.Menu;
 import kitchenpos.menu.domain.menu.MenuProduct;
 import kitchenpos.menu.domain.menu_group.MenuGroup;
 import kitchenpos.order.domain.OrderLineItem;
 import kitchenpos.order.domain.OrderType;
-import kitchenpos.order_table.domain.OrderTable;
+import kitchenpos.order.eat_in_order.domain.order_table.OrderTable;
 import kitchenpos.product.domain.Product;
 import kitchenpos.order.take_out_order.domain.TakeOutOrder;
 
@@ -88,7 +88,7 @@ public class Fixtures {
         return order;
     }
 
-    public static EatInOrder order(final kitchenpos.order.eat_in_order.domain.OrderStatus status) {
+    public static EatInOrder order(final kitchenpos.order.eat_in_order.domain.eat_in_order.OrderStatus status) {
         final EatInOrder order = new EatInOrder();
         order.setId(UUID.randomUUID());
         order.setType(OrderType.EAT_IN);
@@ -98,7 +98,7 @@ public class Fixtures {
         return order;
     }
 
-    public static EatInOrder order(final kitchenpos.order.eat_in_order.domain.OrderStatus status, final OrderTable orderTable) {
+    public static EatInOrder order(final kitchenpos.order.eat_in_order.domain.eat_in_order.OrderStatus status, final OrderTable orderTable) {
         final EatInOrder order = new EatInOrder();
         order.setId(UUID.randomUUID());
         order.setType(OrderType.EAT_IN);

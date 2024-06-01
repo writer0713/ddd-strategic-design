@@ -1,12 +1,12 @@
-package kitchenpos.order_table.service;
+package kitchenpos.order.eat_in_order.service;
 
-import kitchenpos.order.eat_in_order.domain.EatInOrderRepository;
-import kitchenpos.order.eat_in_order.domain.OrderStatus;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.EatInOrderRepository;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.OrderStatus;
 import kitchenpos.order.eat_in_order.infra.InMemoryEatInOrderRepository;
-import kitchenpos.order_table.application.OrderTableService;
-import kitchenpos.order_table.domain.OrderTable;
-import kitchenpos.order_table.domain.OrderTableRepository;
-import kitchenpos.order_table.infra.InMemoryOrderTableRepository;
+import kitchenpos.order.eat_in_order.application.OrderTableService;
+import kitchenpos.order.eat_in_order.domain.order_table.OrderTable;
+import kitchenpos.order.eat_in_order.domain.order_table.OrderTableRepository;
+import kitchenpos.order.eat_in_order.infra.InMemoryOrderTableRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

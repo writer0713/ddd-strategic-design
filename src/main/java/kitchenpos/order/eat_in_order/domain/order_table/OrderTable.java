@@ -1,4 +1,4 @@
-package kitchenpos.order_table.domain;
+package kitchenpos.order.eat_in_order.domain.order_table;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

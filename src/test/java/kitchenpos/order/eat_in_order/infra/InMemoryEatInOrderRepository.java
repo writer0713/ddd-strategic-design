@@ -1,9 +1,9 @@
 package kitchenpos.order.eat_in_order.infra;
 
-import kitchenpos.order.eat_in_order.domain.EatInOrder;
-import kitchenpos.order.eat_in_order.domain.EatInOrderRepository;
-import kitchenpos.order.eat_in_order.domain.OrderStatus;
-import kitchenpos.order_table.domain.OrderTable;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.EatInOrder;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.EatInOrderRepository;
+import kitchenpos.order.eat_in_order.domain.eat_in_order.OrderStatus;
+import kitchenpos.order.eat_in_order.domain.order_table.OrderTable;
 
 import java.util.*;
 
