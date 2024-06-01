@@ -2,6 +2,7 @@ package kitchenpos.order.delivery_order.application;
 
 import kitchenpos.order.delivery_order.domain.DeliveryOrderRepository;
 import kitchenpos.order.delivery_order.domain.DeliveryOrder;
+import kitchenpos.order.delivery_order.domain.KitchenridersClient;
 import kitchenpos.order.delivery_order.domain.OrderStatus;
 import kitchenpos.menu.domain.Menu;
 import kitchenpos.menu.domain.MenuRepository;
